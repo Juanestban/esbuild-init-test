@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.app-container {
+    border: 1px solid #09f;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}

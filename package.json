@@ -1,0 +1,21 @@
+{
+  "name": "esbuild-init-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "servor public index.html 4200 --reload",
+    "build": "esbuild src/index.jsx --bundle --minify --outfile=public/bundle.js --define:process.env.NODE_ENV='\"production\"' --sourcemap --target=chrome58,firefox57,safari11,edge16 --loader:.png=dataurl --format=esm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.8.20"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
